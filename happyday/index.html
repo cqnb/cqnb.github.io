@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SLS兑换页</title>
+</head>
+
+<body>
+    <h1>输入兑换码领取</h1>
+
+    <form>
+        <input type="text" id="urlInput" placeholder="兑换码">
+        <button type="button" onclick="goToUrl()">领取</button>
+    </form>
+
+    <script>
+        function goToUrl() {
+            var url = "https://happyday.csls.eu.org/" + document.getElementById("urlInput").value;
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>
